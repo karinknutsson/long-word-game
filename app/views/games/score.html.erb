@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="title">
+    <h1>Result</h1>
+  </div>
+  <div class="title">
+    <% if @result[:score] == 2 %>
+      <strong>Congratulations!</strong> <%= @result[:solution].join %> is a valid English word!
+    <% elsif @result[:score] == 1 %>
+      Sorry but <%= @result[:solution].join %> does not seem to be a valid English word.
+    <% else %>
+      Sorry but <%= @result[:solution].join %> can't be built out of <%= @result[:letters].join(', ') %>.
+    <% end %>
+  </div>
+  <div class="title" style="margin-top: 60px">
+    <%= link_to 'Play again', new_path, class: 'btn-play-again' %>
+  </div>
+</div>

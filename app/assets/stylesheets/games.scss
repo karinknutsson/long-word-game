@@ -1,0 +1,105 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+$mount-pink: #A1869E;
+$green-sheen: #68B0AB;
+$laurel-green: #8FC0A9;
+$dark-grey: #888;
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14pt;
+  color: $dark-grey;
+}
+
+h1 {
+  color: $mount-pink;
+  font-family: 'Bungee Outline';
+  font-size: 64pt;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: $dark-grey !important;
+}
+
+input {
+  border-radius: 4px;
+}
+
+input[type=text] {
+  padding: 15px 14px 16px 14px;
+  width: 500px;
+  font-size: 14pt;
+  color: $dark-grey;
+  border: 1px dotted $laurel-green;
+}
+
+input[type=submit] {
+  padding: 15px 55px 15px 55px;
+  color: white;
+  background-color: $laurel-green;
+  font-weight: bold;
+  font-size: 16pt;
+  border: 0;
+}
+
+a, a:active, a:hover, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 140px auto 0 auto;
+}
+
+.letter-container {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.letter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  font-size: 24pt;
+  font-weight: bold;
+  background-color: $green-sheen;
+  color: white;
+  border-radius: 6px;
+}
+
+.letter-form {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  align-self: center;
+}
+
+.btn-play-again {
+  padding: 15px 55px 15px 55px;
+  color: white;
+  background-color: $laurel-green;
+  font-weight: bold;
+  font-size: 16pt;
+  border-radius: 4px;
+}
