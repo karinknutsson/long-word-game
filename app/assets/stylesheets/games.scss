@@ -59,6 +59,19 @@ a, a:active, a:hover, a:visited {
   color: white;
 }
 
+li {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  font-size: 24pt;
+  font-weight: bold;
+  background-color: $green-sheen;
+  color: white;
+  border-radius: 6px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
