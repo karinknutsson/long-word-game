@@ -2,23 +2,41 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:600,700,800,900&display=swap');
 
 $mount-pink: #A1869E;
 $green-sheen: #68B0AB;
 $laurel-green: #8FC0A9;
-$dark-grey: #888;
+
+$dark-grey: #808080;
+$light-grey: #C0C0C0;
+$almost-white: #FEFEFE;
+
+$light-yellow: #FFFFD7;
+$light-pink: #FFE1EA;
+$claret: #89043D;
+$sea-green: #18F2B2;
+$violet-web: #FFA0FD;
+$light-violet: #FFEDFE;
+$dark-sea: #062c20;
+
+html, body, div {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14pt;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1vw;
+  font-weight: 900;
   color: $dark-grey;
+  background: $violet-web;
 }
 
 h1 {
-  color: $mount-pink;
-  font-family: 'Bungee Outline';
+  color: $claret;
+  font-family: 'Righteous';
   font-size: 64pt;
 }
 
@@ -26,7 +44,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px $almost-white inset !important;
 }
 
 input:-webkit-autofill {
@@ -38,16 +56,26 @@ input {
 }
 
 input[type=text] {
-  padding: 15px 14px 16px 14px;
-  width: 500px;
-  font-size: 14pt;
+  padding: 1.4vw;
+  width: 40vw;
+  font-size: 1.6vw;
   color: $dark-grey;
-  border: 1px dotted $laurel-green;
+  background: $light-violet;
+  border: 0;
+  // border: 2px dotted $dark-sea;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 0.5vw;
+}
+
+::placeholder {
+  color: $light-grey;
+  opacity: 1;
 }
 
 input[type=submit] {
   padding: 15px 55px 15px 55px;
-  color: white;
+  color: $almost-white;
   background-color: $laurel-green;
   font-weight: bold;
   font-size: 16pt;
@@ -56,31 +84,42 @@ input[type=submit] {
 
 a, a:active, a:hover, a:visited {
   text-decoration: none;
-  color: white;
+  color: $almost-white;
 }
 
 li {
   display: inline-block;
   justify-content: center;
   align-items: center;
-  width: 65px;
+  width: 5vw;
   height: 65px;
   font-size: 24pt;
   font-weight: bold;
   background-color: $green-sheen;
   color: white;
-  border-radius: 6px;
+  border-radius: 3vw;
 }
 
-.container {
+.main-container {
   display: flex;
   flex-direction: column;
-  width: 700px;
-  margin: 140px auto 0 auto;
+  align-items: center;
+  width: 100%;
+}
+
+.content-container {
+  background: $almost-white;
+  width: 90vw;
+  height: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2vw;
 }
 
 .letter-container {
-  width: 700px;
+  width: 80vw;
   display: flex;
   justify-content: space-between;
 }
@@ -89,13 +128,13 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65px;
-  height: 65px;
-  font-size: 24pt;
-  font-weight: bold;
-  background-color: $green-sheen;
-  color: white;
-  border-radius: 6px;
+  width: 7vw;
+  height: 7vw;
+  font-size: 2.4vw;
+  font-weight: 800;
+  background-color: $sea-green;
+  color: $almost-white;
+  border-radius: 4vw;
 }
 
 .letter-form {
@@ -105,6 +144,7 @@ li {
 }
 
 .title {
+  margin-top: 4vw;
   align-self: center;
 }
 
