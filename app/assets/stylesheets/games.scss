@@ -5,21 +5,18 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:600,700,800,900&display=swap');
 
-$mount-pink: #A1869E;
-$green-sheen: #68B0AB;
-$laurel-green: #8FC0A9;
-
 $dark-grey: #808080;
 $light-grey: #C0C0C0;
 $almost-white: #FEFEFE;
 
 $light-yellow: #FFFFD7;
 $light-pink: #FFE1EA;
-$claret: #89043D;
+$claret: #760A44;
 $sea-green: #18F2B2;
 $violet-web: #FFA0FD;
 $light-violet: #FFEDFE;
 $dark-sea: #062c20;
+$bright-teal: #0fa292;
 
 html, body, div {
   margin: 0;
@@ -37,7 +34,7 @@ body {
 h1 {
   color: $claret;
   font-family: 'Righteous';
-  font-size: 64pt;
+  font-size: 7vw;
 }
 
 input:-webkit-autofill,
@@ -56,16 +53,18 @@ input {
 }
 
 input[type=text] {
-  padding: 1.4vw;
+  padding: 1.52vw 2vw;
+  margin-right: 3vw;
   width: 40vw;
   font-size: 1.6vw;
-  color: $dark-grey;
+  color: $dark-sea;
   background: $light-violet;
   border: 0;
   // border: 2px dotted $dark-sea;
   font-family: inherit;
   font-weight: 700;
-  border-radius: 0.5vw;
+  letter-spacing: 0.1vw;
+  border-radius: 5vw;
 }
 
 ::placeholder {
@@ -74,30 +73,24 @@ input[type=text] {
 }
 
 input[type=submit] {
-  padding: 15px 55px 15px 55px;
+  padding: 1.4vw 5vw;
   color: $almost-white;
-  background-color: $laurel-green;
-  font-weight: bold;
-  font-size: 16pt;
+  background-color: $bright-teal;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 1.8vw;
+  letter-spacing: 0.16vw;
   border: 0;
+  border-radius: 5vw;
+}
+
+input:focus {
+  outline: none;
 }
 
 a, a:active, a:hover, a:visited {
   text-decoration: none;
   color: $almost-white;
-}
-
-li {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  width: 5vw;
-  height: 65px;
-  font-size: 24pt;
-  font-weight: bold;
-  background-color: $green-sheen;
-  color: white;
-  border-radius: 3vw;
 }
 
 .main-container {
@@ -145,14 +138,29 @@ li {
 
 .title {
   margin-top: 4vw;
+}
+
+.self-centered {
   align-self: center;
 }
 
+.result {
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+.play-again {
+  margin-top: 7vw;
+}
+
 .btn-play-again {
-  padding: 15px 55px 15px 55px;
-  color: white;
-  background-color: $laurel-green;
-  font-weight: bold;
-  font-size: 16pt;
-  border-radius: 4px;
+  padding: 1.4vw 3.6vw;
+  color: $almost-white;
+  background-color: $bright-teal;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 1.8vw;
+  letter-spacing: 0.16vw;
+  border: 0;
+  border-radius: 0.7vw;
 }

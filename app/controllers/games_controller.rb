@@ -2,12 +2,18 @@ require 'open-uri'
 require 'json'
 
 class GamesController < ApplicationController
+  def create_letters(alphabet)
+    letters = []
+    10.times do
+      letters.push(alphabet.sample)
+    end
+    create_letters(alphabet) if letters.select { |l| l =~ /[aeiou]/ }.length.positive?
+    letters
+  end
+
   def new
     alphabet = ('A'..'Z').to_a
-    @letters = []
-    10.times do
-      @letters.push(alphabet.sample)
-    end
+    @letters = create_letters(alphabet)
   end
 
   def match?(solution, letters)
@@ -20,6 +26,8 @@ class GamesController < ApplicationController
   end
 
   def in_dictionary?(word)
+    return false if word.length == 1 && word != 'a'
+
     url = "https://wagon-dictionary.herokuapp.com/#{word}"
     response_s = URI.open(url).read
     response_h = JSON.parse(response_s)
