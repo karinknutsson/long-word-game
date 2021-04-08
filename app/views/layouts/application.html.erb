@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Longest Word Game</title>
+    <title>Long Word Game</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="main-container">
+      <div class="self-centered title">
+        <h1>Long Word Game</h1>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>
