@@ -11,12 +11,15 @@ $almost-white: #FEFEFE;
 
 $light-yellow: #FFFFD7;
 $light-pink: #FFE1EA;
-$claret: #760A44;
+// $claret: #760A44;
+$claret: #810346;
 $sea-green: #18F2B2;
 $violet-web: #FFA0FD;
 $light-violet: #FFEDFE;
-$dark-sea: #062c20;
+// $dark-sea: #062c20;
+$dark-sea: #073B2A;
 $bright-teal: #0fa292;
+$raspberry: #F71A91;
 
 html, body, div {
   margin: 0;
@@ -35,6 +38,22 @@ h1 {
   color: $claret;
   font-family: 'Righteous';
   font-size: 7vw;
+  // color: rgba(0, 0, 0, 0);
+  // -webkit-text-stroke-width: 0.01vw;
+  // -webkit-text-stroke-color: white;
+  // text-shadow:
+  //           0.3vw 0.3vw $claret
+  text-shadow:
+      0.05vw 0.05vw $almost-white,
+      0.1vw 0.1vw $almost-white,
+      0.15vw 0.15vw $almost-white,
+      0.2vw 0.2vw $almost-white,
+      0.25vw 0.25vw $almost-white,
+      0.3vw 0.3vw $almost-white,
+      0.35vw 0.35vw $almost-white,
+      0.4vw 0.4vw $almost-white,
+      0.45vw 0.45vw $almost-white,
+      0.5vw 0.5vw $almost-white
 }
 
 input:-webkit-autofill,
@@ -75,7 +94,7 @@ input[type=text] {
 input[type=submit] {
   padding: 1.4vw 5vw;
   color: $almost-white;
-  background-color: $bright-teal;
+  background-color: $raspberry;
   font-family: inherit;
   font-weight: 800;
   font-size: 1.8vw;
@@ -147,6 +166,7 @@ a, a:active, a:hover, a:visited {
 .result {
   font-size: 2vw;
   font-weight: 700;
+  color: $dark-sea;
 }
 
 .play-again {
@@ -154,13 +174,13 @@ a, a:active, a:hover, a:visited {
 }
 
 .btn-play-again {
-  padding: 1.4vw 3.6vw;
+  padding: 1.4vw 5vw;
   color: $almost-white;
-  background-color: $bright-teal;
+  background-color: $raspberry;
   font-family: inherit;
   font-weight: 800;
   font-size: 1.8vw;
   letter-spacing: 0.16vw;
   border: 0;
-  border-radius: 0.7vw;
+  border-radius: 5vw;
 }
