@@ -7,7 +7,7 @@ class GamesController < ApplicationController
     10.times do
       letters.push(alphabet.sample)
     end
-    create_letters(alphabet) if letters.select { |l| l =~ /[aeiou]/ }.length.positive?
+    create_letters(alphabet) if letters.select { |l| l =~ /[AEIOU]/ }.length.zero?
     letters
   end
 

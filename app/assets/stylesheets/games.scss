@@ -50,11 +50,11 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px $almost-white inset !important;
+    -webkit-box-shadow: 0 0 0 30px $light-violet inset !important;
 }
 
 input:-webkit-autofill {
-    -webkit-text-fill-color: $dark-grey !important;
+    -webkit-text-fill-color: $dark-sea !important;
 }
 
 input {
@@ -147,7 +147,7 @@ a, a:active, a:hover, a:visited {
 .title, .result {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .result {
@@ -158,7 +158,7 @@ a, a:active, a:hover, a:visited {
 }
 
 .btn-play-again {
-  padding: 1.4vw 5vw;
+  padding: 0.4vw 5vw;
   color: $almost-white;
   background-color: $claret;
   font-family: inherit;
