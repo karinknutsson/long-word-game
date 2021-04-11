@@ -9,15 +9,12 @@ $dark-grey: #808080;
 $light-grey: #C0C0C0;
 $almost-white: #FEFEFE;
 
-$light-yellow: #FFFFD7;
-$light-pink: #FFE1EA;
 $claret: #810346;
-$sea-green: #18F2B2;
-$violet-web: #FFA0FD;
+$medium-violet: #976198;
+$soft-pistaccio: #C0ECC3;
+$medium-teal: #4CCDA4;
 $light-violet: #FFEDFE;
 $dark-sea: #073B2A;
-$bright-teal: #0fa292;
-$raspberry: #F71A91;
 
 html, body, div {
   margin: 0;
@@ -29,11 +26,11 @@ body {
   font-size: 1vw;
   font-weight: 900;
   color: $dark-grey;
-  background: $violet-web;
+  background: $soft-pistaccio;
 }
 
 h1 {
-  color: $claret;
+  color: $medium-violet;
   font-family: 'Righteous';
   font-size: 7vw;
   text-shadow:
@@ -86,7 +83,7 @@ input[type=text] {
 input[type=submit] {
   padding: 1.4vw 5vw;
   color: $almost-white;
-  background-color: $raspberry;
+  background-color: $claret;
   font-family: inherit;
   font-weight: 800;
   font-size: 1.8vw;
@@ -136,7 +133,7 @@ a, a:active, a:hover, a:visited {
   height: 7vw;
   font-size: 2.4vw;
   font-weight: 800;
-  background-color: $sea-green;
+  background-color: $medium-teal;
   color: $almost-white;
   border-radius: 4vw;
 }
@@ -159,7 +156,7 @@ a, a:active, a:hover, a:visited {
   font-size: 2vw;
   font-weight: 700;
   color: $dark-sea;
-  line-height: 3vw;
+  line-height: 4vw;
 }
 
 .play-again {
@@ -169,7 +166,7 @@ a, a:active, a:hover, a:visited {
 .btn-play-again {
   padding: 1.4vw 5vw;
   color: $almost-white;
-  background-color: $raspberry;
+  background-color: $claret;
   font-family: inherit;
   font-weight: 800;
   font-size: 1.8vw;
