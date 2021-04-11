@@ -1,9 +1,10 @@
 
       <div class="content-container">
         <div class="self-centered result">
-          <% if @result[:score] == 2 %>
-            <strong>Congratulations!</strong> <%= @result[:solution].join %> is a valid English word!
-          <% elsif @result[:score] == 1 %>
+          <% if @result[:score].positive? %>
+            <strong>Congratulations!</strong> <%= @result[:solution].join %> is a valid English word.<br>
+            You have scored <strong><%= @result[:score] %></strong> points.
+          <% elsif @result[:score] == -1 %>
             <%= @result[:solution].join %> does not seem to be a valid English word.
           <% else %>
             <%= @result[:solution].join %> cannot be built out of <%= @result[:letters].join(', ') %>.
