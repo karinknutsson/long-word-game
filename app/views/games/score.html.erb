@@ -3,7 +3,7 @@
         <div class="self-centered result">
           <% if @result[:score].positive? %>
             Congratulations! <%= @result[:solution].join %> is a valid English word.<br>
-            Your score is <%= @result[:score] %> points.
+            Your have scored <%= @result[:score] %> points.
           <% elsif @result[:score] == -1 %>
             <%= @result[:solution].join %> does not seem to be a valid English word.
           <% else %>
