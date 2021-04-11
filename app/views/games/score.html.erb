@@ -9,6 +9,7 @@
           <% else %>
             <%= @result[:solution].join %> cannot be built out of <%= @result[:letters].join(', ') %>.
           <% end %>
+          <br>&nbsp;
         </div>
         <div class="result play-again">
           <%= link_to 'Play again', new_path, class: 'btn-play-again' %>
