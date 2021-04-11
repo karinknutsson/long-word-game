@@ -11,12 +11,10 @@ $almost-white: #FEFEFE;
 
 $light-yellow: #FFFFD7;
 $light-pink: #FFE1EA;
-// $claret: #760A44;
 $claret: #810346;
 $sea-green: #18F2B2;
 $violet-web: #FFA0FD;
 $light-violet: #FFEDFE;
-// $dark-sea: #062c20;
 $dark-sea: #073B2A;
 $bright-teal: #0fa292;
 $raspberry: #F71A91;
@@ -38,11 +36,6 @@ h1 {
   color: $claret;
   font-family: 'Righteous';
   font-size: 7vw;
-  // color: rgba(0, 0, 0, 0);
-  // -webkit-text-stroke-width: 0.01vw;
-  // -webkit-text-stroke-color: white;
-  // text-shadow:
-  //           0.3vw 0.3vw $claret
   text-shadow:
       0.05vw 0.05vw $almost-white,
       0.1vw 0.1vw $almost-white,
@@ -79,7 +72,6 @@ input[type=text] {
   color: $dark-sea;
   background: $light-violet;
   border: 0;
-  // border: 2px dotted $dark-sea;
   font-family: inherit;
   font-weight: 700;
   letter-spacing: 0.1vw;
@@ -167,6 +159,7 @@ a, a:active, a:hover, a:visited {
   font-size: 2vw;
   font-weight: 700;
   color: $dark-sea;
+  line-height: 2vw;
 }
 
 .play-again {
