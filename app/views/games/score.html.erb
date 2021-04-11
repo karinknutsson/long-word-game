@@ -1,6 +1,6 @@
 
       <div class="content-container">
-        <div class="self-centered result">
+        <div class="result">
           <% if @result[:score].positive? %>
             Congratulations! <%= @result[:solution].join %> is a valid English word.<br>
             Your have scored <%= @result[:score] %> points.
@@ -10,7 +10,7 @@
             <%= @result[:solution].join %> cannot be built out of <%= @result[:letters].join(', ') %>.
           <% end %>
         </div>
-        <div class="self-centered result play-again">
+        <div class="result play-again">
           <%= link_to 'Play again', new_path, class: 'btn-play-again' %>
         </div>
       </div>
